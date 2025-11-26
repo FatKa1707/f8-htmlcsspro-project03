@@ -110,7 +110,7 @@ a {
 .navbar__list {
     display: flex;
 }
-.action__login,
+.header-action__login,
 .navbar__link {
     color: #C9D2DA;
     font-size: 1.6rem;
@@ -136,7 +136,84 @@ a {
     background-color: #fff;
 }
 
-.action__signup {
+.header-action {
+    display: flex;
+    align-items: center;
+}
+
+.header-action__login {
+    margin-right: 7px;
+}
+
+.header-action__signup {
     --height: 44px;
     min-width: 104px;
+}
+
+/* Hero */
+
+.hero {
+    margin-top: 76px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__content {
+    width: 44.2%;
+    flex-shrink: 0;
+}
+
+.hero__media {
+    flex-grow: 1;
+}
+
+.hero__heading {
+    color: #FFF;
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1.14286; /* 114.286% */
+    letter-spacing: -1.4px;
+}
+
+.hero__desc {
+    margin-top: 22px;
+    color: #C9D2DA;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.66666666; /* 166.667% */
+}
+
+.hero__row {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__phone {
+    margin-left: 38px;
+    color: #FFF;
+    font-size: 1.8rem;
+}
+
+.hero__images {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero__img {
+    width: 330px;
+    height: 540px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.hero__img:first-child {
+    margin-right: -6px;
+    position: relative;
+}
+
+.hero__img:last-child {
+    width: 210px;
+    height: 410px;
 }
