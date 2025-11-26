@@ -446,6 +446,11 @@ a {
     column-gap: 30px;
 }
 
+.member-item:hover .member-item__img {
+    transform: scale(1.1);
+    cursor: pointer;
+} 
+
 .member-item__img-bg {
     padding-top: 28px;
     border-radius: 6px;
@@ -458,6 +463,7 @@ a {
     height: 290px;
     display: block;
     object-fit: cover;
+    transition: 0.3s;
 }
 
 .member-item__name {
